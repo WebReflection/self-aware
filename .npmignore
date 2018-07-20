@@ -1,6 +1,7 @@
 coverage/*
 esm/.eslintrc
 node_modules/*
+test/*
 .DS_Store
 .gitignore
 .travis.yml

@@ -31,5 +31,13 @@
     "method",
     "fix",
     "bound"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebReflection/self-aware.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WebReflection/self-aware/issues"
+  },
+  "homepage": "https://github.com/WebReflection/self-aware#readme"
 }
