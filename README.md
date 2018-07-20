@@ -1,4 +1,6 @@
-#self-aware
+# self-aware
+
+[![Build Status](https://travis-ci.com/WebReflection/self-aware.svg?branch=master)](https://travis-ci.com/WebReflection/self-aware) [![Build Status](https://travis-ci.org/WebReflection/self-aware.svg?branch=master)](https://travis-ci.org/WebReflection/self-aware) [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://opensource.org/licenses/ISC)
 
 Makes methods invokable with the original context as fallback,
 fixing the unexpected `Promise` behavior or similar cases.
