@@ -1,6 +1,6 @@
 {
   "name": "self-aware",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Makes methods invokable with the original context as fallback.",
   "module": "esm/index.js",
   "main": "cjs/index.js",
