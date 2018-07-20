@@ -1,0 +1,35 @@
+{
+  "name": "self-aware",
+  "version": "0.0.0",
+  "description": "Makes methods invokable with the original context as fallback.",
+  "module": "esm/index.js",
+  "main": "cjs/index.js",
+  "unpkg": "min.js",
+  "scripts": {
+    "build": "npm run cjs && npm run esm && npm run test && npm run min && npm run size",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "cjs": "cp index.js cjs/ && echo 'module.exports = selfAware;' >> cjs/index.js",
+    "esm": "cp index.js esm/ && echo 'export default selfAware;' >> esm/index.js",
+    "min": "uglifyjs index.js --support-ie8 --comments=/^!/ -c -m -o min.js",
+    "size": "cat index.js | wc -c;cat min.js | wc -c;gzip -c9 min.js | wc -c;cat min.js | brotli | wc -c && rm -f min.js.br",
+    "test": "istanbul cover test/index.js"
+  },
+  "author": "Andrea Giammarchi",
+  "license": "ISC",
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "istanbul": "^0.4.5",
+    "uglify-js": "^3.4.5"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "keywords": [
+    "bind",
+    "Promise",
+    "method",
+    "fix",
+    "bound"
+  ]
+}
